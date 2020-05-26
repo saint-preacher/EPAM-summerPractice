@@ -1,0 +1,29 @@
+.wrapper{
+  display:grid;
+  width:400px;
+  height:400px;
+  grid-template:  1fr 1fr / 1fr 1fr;
+  grid-template-areas: "red blue" "green blue";
+}
+.wrapper div {
+  transition: 0.3s;
+}
+.wrapper div:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+.red {
+    background: #900;
+    grid-area: red;
+  }
+  
+  .green {
+    background: #090;
+    grid-area: green;
+  }
+  
+  .blue {
+    background: #009;
+    grid-area: blue;
+  }
+  
